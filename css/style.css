@@ -96,14 +96,14 @@ body {
 
     .white-container{
         display: flex;
-        min-height: 50vh;
+        min-height: 100vh;
         width: 100%;
         justify-content: center;
     }
 
     .black-container{
         display: flex;
-        min-height: 50vh;
+        min-height: 100vh;
         width: 100%;
         justify-content: center;
     }
