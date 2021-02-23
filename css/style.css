@@ -1,0 +1,154 @@
+@font-face {
+    font-family: cheltenham;
+    src: url(cheltenham.otf);
+}
+
+@font-face {
+    font-family: frankling;
+    src: url(fgreg.ttf);
+}
+
+body {
+    min-height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    }
+
+.white-container{
+    width: 50%;
+    background-color: white;
+    display: grid;
+    float: left;
+    flex-wrap: wrap;
+    grid-template-rows: 30px auto 150px;
+    color: black;
+}
+
+.black-container{
+    width: 50%;
+    background-color: black;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: 30px auto 150px;
+    color: white;
+}
+
+.title1 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    font-family: frankling;
+    padding: 0.5rem;
+    font-size: 1.4vw;
+    margin: 1rem;
+}
+
+.title2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: cheltenham;
+    font-size: 1.3vw;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.text1 {
+    display: flex;
+    align-self: center;
+    font-family: cheltenham;
+    font-size: 16px;
+    line-height: 24px; 
+    word-spacing: 6px;
+    margin: 6rem 6rem 2rem 6rem;
+}
+
+.text2 {
+    display: flex;
+    align-self: center;
+    font-family: frankling;
+    font-size: 18px;
+    line-height: 24px;
+    word-spacing: 6px; 
+    margin: 6rem 6rem 2rem 6rem; 
+}
+
+.l-button {
+    display: flex;
+    justify-content: center;
+}
+
+.r-button {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+	.main-container {
+		display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+    .white-container{
+        display: flex;
+        min-height: 50vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .black-container{
+        display: flex;
+        min-height: 50vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title1 {
+        font-size: 12px;
+        margin: 1.5rem 1rem 0rem 1rem;
+    }
+
+    .title2 {
+        font-size: 10px;
+        margin: 1.5rem 1rem 0.25rem 1rem;
+    }
+
+    .text1 {
+        margin: 0rem 4rem 2rem 4rem;
+        font-size: 11px;
+        word-spacing: 4px;
+        line-height: 20px;
+    }
+
+    .text2 {
+        margin: 0rem 4rem 2rem 4rem;
+        font-size: 13px;
+        word-spacing: 4px;
+        line-height: 22px;
+    }
+
+    .l-button img {
+        width: 20px;
+    }
+
+    .l-button {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .r-button img {
+        width: 20px;
+    }
+
+    .r-button {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+}
+
