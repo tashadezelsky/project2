@@ -19,22 +19,24 @@ body {
     }
 
 .white-container{
-    width: 50%;
     background-color: white;
     display: grid;
     float: left;
     flex-wrap: wrap;
     grid-template-rows: 30px auto 150px;
     color: black;
+    height: 100vh;
+    width: 50%;
 }
 
 .black-container{
-    width: 50%;
     background-color: black;
     display: grid;
     flex-wrap: wrap;
     grid-template-rows: 30px auto 150px;
     color: white;
+    height: 100vh;
+    width: 50%;
 }
 
 .title1 {
@@ -92,7 +94,9 @@ body {
 		display: flex;
         flex-direction: column;
         min-height: 100vh;
+        justify-content: center;
         }
+
 
     .white-container{
         display: flex;
@@ -101,7 +105,7 @@ body {
         justify-content: center;
     }
 
-    .black-container{
+    .black-container {
         display: flex;
         min-height: 100vh;
         width: 100%;
@@ -109,27 +113,30 @@ body {
     }
 
     .title1 {
-        font-size: 12px;
-        margin: 1.5rem 1rem 0rem 1rem;
+        display: flex;
+        align-self: center;
+        font-size: 14px;
     }
 
     .title2 {
-        font-size: 10px;
-        margin: 1.5rem 1rem 0.25rem 1rem;
+        display: flex;
+        align-self: center;
+        font-size: 12px;
     }
 
     .text1 {
-        margin: 0rem 4rem 2rem 4rem;
-        font-size: 11px;
-        word-spacing: 4px;
-        line-height: 20px;
+        font-size: 12px;
+        word-spacing: 3px;
+        line-height: 21px;
+        align-self: center;
+        margin: -3rem 3rem 2rem 3rem;
     }
 
     .text2 {
-        margin: 0rem 4rem 2rem 4rem;
-        font-size: 13px;
-        word-spacing: 4px;
-        line-height: 22px;
+        font-size: 14px;
+        word-spacing: 3px;
+        line-height: 21px;
+        margin: -3rem 3rem 2rem 3rem;
     }
 
     .l-button img {
@@ -137,8 +144,7 @@ body {
     }
 
     .l-button {
-        margin-top: -20px;
-        margin-bottom: 20px;
+        margin: 1rem;
     }
 
     .r-button img {
@@ -146,9 +152,12 @@ body {
     }
 
     .r-button {
-        margin-top: -20px;
-        margin-bottom: 20px;
     }
 
 }
+
+.slide-in {
+    animation: slide-in 0.5s ease forwards;
+}
+
 
