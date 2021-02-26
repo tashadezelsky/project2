@@ -89,6 +89,10 @@ body {
     justify-content: center;
 }
 
+li {
+    list-style: none;
+}
+
 @media (max-width: 600px) {
 	.main-container {
 		display: flex;
