@@ -9,7 +9,7 @@
 }
 
 body {
-    min-height: 100%;
+    max-height: 100%;
 }
 
 .main-container{
@@ -25,7 +25,7 @@ body {
     flex-wrap: wrap;
     grid-template-rows: 30px auto 150px;
     color: black;
-    height: 100vh;
+    max-height: 100vh;
     width: 50%;
 }
 
@@ -35,7 +35,7 @@ body {
     flex-wrap: wrap;
     grid-template-rows: 30px auto 150px;
     color: white;
-    height: 100vh;
+    max-height: 100vh;
     width: 50%;
 }
 
@@ -104,16 +104,18 @@ li {
 
     .white-container{
         display: flex;
+        flex-direction: column;
         min-height: 100vh;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .black-container {
         display: flex;
+        flex-direction: column;
         min-height: 100vh;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .title1 {

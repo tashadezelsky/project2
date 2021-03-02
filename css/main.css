@@ -1,22 +1,52 @@
 html, body {
-    background-color: black;
+    background-color: white;
+    display: flex;
+}
+
+@font-face {
+    font-family: cheltenham;
+    src: url(cheltenham.otf);
+}
+
+@font-face {
+    font-family: frankling;
+    src: url(fgreg.ttf);
 }
 
 .main-container {
-    border: 2px solid green;
-    display: grid;
-    justify-content: center;
+    border: 2px solid;
+    display: flex;
     height: 100vh;
 }
 
-.white1 {
-    background-color: white;
-    align-items: flex-start;
-    width: 5rem;
-    height: 3rem;
+.black-container {
+    background-color: black;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    color: white;
+    max-height: 100vh;
+    width: 50vw;
 }
 
-.img-container {
+.white-container {
+    background-color: white;
     display: flex;
-    align-items: center;
+    float: right;
+    flex-wrap: wrap;
+    color: black;
+    max-height: 100vh;
+    width: 50vw;
 }
+
+.image {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    align-self: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+
+
